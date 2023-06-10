@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/">
+        <!--<input type="date"> dia, mes, ano -->
+        <fieldset> <!-- usado pra agrupar elemento relacionado ao informulario     -->
+            <legend>Cadastro de usuario</legend> <!--usado para dar titulo ao grupo atual do formulario -->
+
+        <label for="mail">Email</label> <!-- e uma tag de auto fechamento com a barra / no fina da tag ex"teste@gmail.com"/  -->
+        <input id="mail" type="email" name="mail" placeholder="teste@gmail.com" required/>
+
+        <label for="pass">Senha:</label>
+        <input id="pass" type="password" name="pass" placeholder="senha" required/>
+
+
+        <label for="perfil_cor">cor do perfil</label>
+        <input type="color" id="perfil_cor" name="color"/>  
+        
+        <section> <!--aqui e um conjunto de radial buttom-->
+            <p>selecione a sua turma:</p>
+            <div>
+                <input type="radio" name="Turma" id="Turma_17" value="17">
+                <label for="">Turma 17 (T17) </label>
+            </div>
+            <div>
+                <input type="radio" name="Turma" id="Turma_18" value="18">
+                <label for="">Turma 18 (T18) </label>
+            </div>
+            <div>
+                <input type="radio" name="Turma" id="Turma_19" value="19">
+                <label for="">Turma 19 (T19) </label>
+            </div>
+        </section>
+
+        <section>
+            <label for="instrutor">Instrutor</label>
+            <select id="instrutor" name="instrutor">
+                <!--<option disabled selected >Selecione uma opçao...</option> uma forma de burlar um placeholder-->
+                <option disabled selected >Selecione uma opçao...</option> <!--duplicar linha em cima da linha segura CTRL + C -->
+                <option value="ale">Alessandra</option>
+                <option value="lore">Lorena</option>
+                <option value="kayan">kayan</option>
+                <option value="luis">Luis</option>
+                <option value="vilson">Vilson</option>
+                <option value="wesley">Wesley</option>
+                <option value="tk">Thiago</option>
+            </select>
+        </section>
+          
+        <section>
+            <label for="input_desc"> Descriçao</label>
+            <textarea id="inpu_desc" placeholder="Digite a sua descriçao aqui..." name="descriçao"></textarea>
+        </section>
+
+        <!-- Duas formas diferente de criar um botao-->
+        <button>Realizar envio</button>
+        <input type="submit" value="Realizar envio 2">
+
+
+       </fieldset>
+    </form>
+</body>
+</html>
